@@ -5,138 +5,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rishab Karmakar - Portfolio</title>
 
-    <!-- Google Analytics Global Site Tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-      gtag('config', 'G-XXXXXXXXXX'); <!-- Replace G-XXXXXXXXXX with your actual Measurement ID -->
-    </script>
-    <!-- End Google Analytics -->
-
-    <!-- Tailwind CSS CDN -->
+        gtag('config', 'G-XXXXXXXXXX'); </script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
     <style>
         /* Apply Inter font to the entire body */
         body {
             font-family: 'Inter', sans-serif;
-            @apply bg-gray-50 text-gray-800; /* Light gray background, dark gray text */
+            /* Subtle light background, professional text color */
+            @apply bg-gray-50 text-gray-800; 
+        }
+        /* Custom styling for a smooth scroll effect */
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
 <body class="antialiased">
-    <!-- Header Section -->
-    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6 md:p-8 shadow-lg">
+    <header class="bg-slate-100 text-slate-800 p-6 md:p-8 shadow-md sticky top-0 z-10 border-b border-gray-200">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-            <!-- Your Name/Logo -->
-            <h1 class="text-3xl md:text-4xl font-bold mb-2 md:mb-0">Rishab Karmakar</h1>
-            <!-- Navigation -->
+            <h1 class="text-3xl md:text-4xl font-extrabold mb-2 md:mb-0 tracking-tight text-slate-800">Rishab Karmakar</h1>
             <nav>
-                <ul class="flex space-x-4 flex-wrap justify-center">
-                    <li><a href="#about" class="hover:text-blue-200 transition duration-300">About</a></li>
-                    <li><a href="#experience" class="hover:text-blue-200 transition duration-300">Experience</a></li>
-                    <li><a href="#awards-leadership" class="hover:text-blue-200 transition duration-300">Awards & Leadership</a></li>
-                    <li><a href="#skills" class="hover:text-blue-200 transition duration-300">Skills</a></li>
-                    <li><a href="#projects" class="hover:text-blue-200 transition duration-300">Projects & Certifications</a></li>
-                    <li><a href="#contact" class="hover:text-blue-200 transition duration-300">Contact</a></li>
+                <ul class="flex space-x-4 flex-wrap justify-center text-sm md:text-base font-medium">
+                    <li><a href="#about" class="text-slate-700 hover:text-emerald-600 transition duration-300">About</a></li>
+                    <li><a href="#experience" class="text-slate-700 hover:text-emerald-600 transition duration-300">Experience</a></li>
+                    <li><a href="#awards-leadership" class="text-slate-700 hover:text-emerald-600 transition duration-300">Awards</a></li>
+                    <li><a href="#skills" class="text-slate-700 hover:text-emerald-600 transition duration-300">Skills</a></li>
+                    <li><a href="#projects" class="text-slate-700 hover:text-emerald-600 transition duration-300">Projects</a></li>
+                    <li><a href="#education" class="text-slate-700 hover:text-emerald-600 transition duration-300">Education</a></li>
+                    <li><a href="#contact" class="text-slate-700 hover:text-emerald-600 transition duration-300">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Main Content Area -->
-    <main class="container mx-auto px-4 py-8 md:py-12 space-y-12">
+    <main class="container mx-auto px-4 py-8 md:py-16 space-y-16">
 
-        <!-- About Me Section -->
-        <section id="about" class="bg-white p-6 md:p-8 rounded-lg shadow-md">
-            <h2 class="text-3xl font-semibold text-gray-900 mb-4">About Me</h2>
-            <div class="flex flex-col md:flex-row items-center gap-6">
-                <!-- Placeholder for Profile Picture -->
-                <img src="https://placehold.co/150x150/667EEA/FFFFFF?text=PROFILE" alt="Rishab Karmakar's Profile Picture" class="w-32 h-32 rounded-full object-cover shadow-lg">
-                <div class="text-lg leading-relaxed text-gray-700">
-                    <p class="mb-3">
-                        Hello! I'm <span class="font-medium text-blue-600">Rishab Karmakar</span>, a <span class="font-medium text-blue-600">Lead Project Management Specialist</span> with extensive experience in driving large-scale transformation programs, managing software development projects, and enhancing organizational efficiency.
-                    </p>
-                    <p>
-                        I excel in project planning, risk management, and reporting, with a proven track record of delivering critical projects on time and within budget. My expertise includes leveraging data for informed decision-making and leading cross-functional collaboration to achieve strategic goals.
-                    </p>
+        <section id="about" class="bg-white p-6 md:p-10 rounded-xl shadow-2xl transition duration-500 hover:shadow-3xl">
+            <h2 class="text-4xl font-bold text-slate-800 mb-6 border-b-2 border-emerald-500 pb-2">About Me</h2>
+            
+            <div class="flex flex-col lg:flex-row items-start gap-8">
+                <div class="lg:w-2/3">
+                    <div class="mb-6">
+                        <p class="text-xl font-semibold text-slate-900">Project Management Specialist</p>
+                        <p class="text-base text-gray-500">6+ Years Experience | Hyderabad, India</p>
+                    </div>
+                    
+                    <div class="text-lg leading-relaxed text-gray-700 space-y-4">
+                        <p>
+                            I am a Project & Program Management Specialist with over 6 years of experience in delivering large-scale transformation, IT, and infrastructure initiatives across global organizations.
+                        </p>
+                        <p>
+                            I specialize in project governance, Agile/Waterfall delivery, and Lean methodologies (VSM). My focus is on achieving strategic goals—ensuring projects are delivered on time, within budget, and leading cross-functional teams to drive high-impact results and organizational change.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/3 w-full">
+                    <h3 class="text-xl font-bold text-slate-800 mb-4">Key Achievements</h3>
+                    <div class="space-y-4">
+                        <div class="p-4 bg-emerald-50 border-l-4 border-emerald-600 rounded-lg shadow-md transition duration-300 hover:bg-emerald-100">
+                            <p class="text-3xl font-extrabold text-emerald-600">$5M+</p>
+                            <p class="text-sm text-gray-700">Cost Savings via Vendor Consolidation</p>
+                        </div>
+                        <div class="p-4 bg-emerald-50 border-l-4 border-emerald-600 rounded-lg shadow-md transition duration-300 hover:bg-emerald-100">
+                            <p class="text-3xl font-extrabold text-emerald-600">40%</p>
+                            <p class="text-sm text-gray-700">Improvement in Executive Visibility</p>
+                        </div>
+                        <div class="p-4 bg-emerald-50 border-l-4 border-emerald-600 rounded-lg shadow-md transition duration-300 hover:bg-emerald-100">
+                            <p class="text-3xl font-extrabold text-emerald-600">98%</p>
+                            <p class="text-sm text-gray-700">On-Time Project Delivery Rate</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="bg-white p-6 md:p-8 rounded-lg shadow-md">
-            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Professional Experience</h2>
+        <section id="experience" class="bg-white p-6 md:p-10 rounded-xl shadow-xl">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 border-b-2 border-emerald-500 pb-2">Professional Experience</h2>
             <div class="space-y-8">
-                <!-- GE Vernova -->
-                <div class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-200 hover:shadow-lg transition duration-300">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-1">Lead Project Management Specialist <span class="font-normal text-gray-600">at <a href="https://www.gevernova.com/" target="_blank" class="text-blue-600 hover:underline">GE Vernova</a></span></h3>
-                    <p class="text-gray-600 mb-3">Nov 2024 – Present</p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2">
-                        <li>Led an end-to-end vendor consolidation project within a large-scale transformation program through strategic project planning, RAID log management, and effective cross-functional collaboration, resulting in $5M+ in cost savings.</li>
-                        <li>Streamlined program governance and reporting within a large-scale transformation initiative by validating cross-workstream data and building 5–6 real-time dashboards in Power BI, Tableau, and Excel providing visibility into 25+ KPIs and improving leadership insight by 40% to enable data-driven decision-making across workstreams.</li>
+                <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 hover:shadow-lg transition duration-300 hover:scale-[1.01]">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-1">Lead Project Management Specialist <span class="font-normal text-gray-600">at <a href="https://www.gevernova.com/" target="_blank" class="text-emerald-600 hover:text-emerald-800 transition duration-300 hover:underline">GE Vernova</a></span></h3>
+                    <p class="text-gray-600 mb-3 text-sm">Hyderabad, India | Nov 2024 – Present</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 text-base">
+                        <li>Led an end-to-end vendor consolidation project within a large-scale transformation program through strategic planning, RAID governance, and cross-functional coordination, delivering $5M+ in cost savings and reducing delivery risk.</li>
+                        <li>Streamlined program governance and reporting by validating cross-workstream data and developing 5–6 real-time dashboards in Power BI, Tableau, and Excel, improving visibility into 25+ KPIs and enhancing leadership insight by 40% to enable data-driven decisions.</li>
+                        <li>Managed global PR/PO cycles across 18 countries, converting $202M in planned value into POs, reconciling invoices, and ensuring timely financial approvals across three business functions to maintain financial integrity and operational continuity.</li>
+                        <li>Collaborated with Lean leadership to build a comprehensive Value Stream Map (VSM) with 13 swim lanes and 120+ processes, identifying kaizen opportunities that improved supply–demand workflows and reduced cycle time.</li>
                     </ul>
                 </div>
 
-                <!-- Deloitte - Senior Analyst PMO -->
-                <div class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-200 hover:shadow-lg transition duration-300">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-1">Senior Analyst PMO <span class="font-normal text-gray-600">at <a href="https://www2.deloitte.com/us/en.html" target="_blank" class="text-blue-600 hover:underline">Deloitte</a></span></h3>
-                    <p class="text-gray-600 mb-3">Feb 2023 – Nov 2024</p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2">
-                        <li>Managed and supported 5+ software development and application deployment projects within a cybersecurity program driving 98% on-time delivery through proactive risk and issue management, sprint planning, and weekly stakeholder status reporting.</li>
-                        <li>Automated 3 program-level reports to track procurement, UAT, and go-live milestones by integrating ServiceNow, Power BI, and SharePoint boosting reporting efficiency by 24% and achieving savings equivalent to 2 FTEs.</li>
+                <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 hover:shadow-lg transition duration-300 hover:scale-[1.01]">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-1">Senior PMO Analyst <span class="font-normal text-gray-600">at <a href="https://www2.deloitte.com/us/en.html" target="_blank" class="text-emerald-600 hover:text-emerald-800 transition duration-300 hover:underline">Deloitte</a></span></h3>
+                    <p class="text-gray-600 mb-3 text-sm">Hyderabad, India | Feb 2023 – Nov 2024</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 text-base">
+                        <li>Managed and supported 5+ software development and application deployment projects within a cybersecurity program, driving 98% on-time delivery through proactive risk and issue management, sprint planning, and weekly stakeholder status reporting.</li>
+                        <li>Automated program-level dashboards (ServiceNow, Power BI, SharePoint) to track procurement, UAT, and go-live milestones, boosting reporting efficiency by 24% and achieving savings equivalent to 2 FTEs annually.</li>
                     </ul>
                 </div>
 
-                <!-- BT Group - Project Coordinator (Company name corrected) -->
-                <div class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-200 hover:shadow-lg transition duration-300">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-1">Project Coordinator <span class="font-normal text-gray-600">at <a href="https://www.bt.com/" target="_blank" class="text-blue-600 hover:underline">BT Group</a></span></h3>
-                    <p class="text-gray-600 mb-3">Jul 2019 – Feb 2023</p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2">
-                        <li>Directed 20+ telecommunications infrastructure projects—including LAN, WAN, and managed services—across 100+ locations, applying Agile and Waterfall methodologies to ensure alignment with scope, timelines, and delivery milestones, resulting in a 25% reduction in implementation time.</li>
-                        <li>Led a procurement initiative for an internal client by leveraging detailed budget planning and vendor negotiation, achieving a positive margin of over £7,500.</li>
+                <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 hover:shadow-lg transition duration-300 hover:scale-[1.01]">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-1">Project Coordinator <span class="font-normal text-gray-600">at <a href="https://www.bt.com/" target="_blank" class="text-emerald-600 hover:text-emerald-800 transition duration-300 hover:underline">BT Group</a></span></h3>
+                    <p class="text-gray-600 mb-3 text-sm">Kolkata, India | Jul 2019 – Feb 2023</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 text-base">
+                        <li>Directed 20+ telecommunications infrastructure projects—including LAN, WAN, and managed services—across 100+ locations, applying Agile and Waterfall methodologies, resulting in a 25% reduction in implementation time.</li>
+                        <li>Implemented process automation using Excel, Power BI, and Macros, reducing manual reporting time by 50% and improving data accuracy.</li>
+                        <li>Led a procurement initiative for an internal client by leveraging detailed budget planning and vendor negotiation, achieving a positive margin of over £7,500 in savings.</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Awards & Leadership Section -->
-        <section id="awards-leadership" class="bg-white p-6 md:p-8 rounded-lg shadow-md">
-            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Awards & Leadership Contributions</h2>
+        <section id="awards-leadership" class="bg-white p-6 md:p-10 rounded-xl shadow-xl">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 border-b-2 border-emerald-500 pb-2">Awards & Leadership Contributions</h2>
 
-            <!-- Recognitions/Awards -->
             <div class="mb-8">
-                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Recognitions & Awards</h3>
+                <h3 class="text-2xl font-semibold text-slate-800 mb-4">Recognitions & Awards</h3>
                 <div class="space-y-4">
-                    <div class="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200">
-                        <p class="font-medium text-gray-900">Applause Award (GE Vernova, 2025)</p>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:bg-emerald-50 transition duration-300 hover:shadow-md">
+                        <p class="font-medium text-slate-900">Applause Award (GE Vernova, 2025)</p>
                         <p class="text-gray-700 text-sm">Recognized by leadership for going above and beyond during project preparation. Commended for aggregating large datasets into digestible formats, demonstrating exceptional teamwork, and contributing generously outside regular working hours.</p>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200">
-                        <p class="font-medium text-gray-900">Spot Award (Deloitte, 2023)</p>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:bg-emerald-50 transition duration-300 hover:shadow-md">
+                        <p class="font-medium text-slate-900">Spot Award (Deloitte, 2023)</p>
                         <p class="text-gray-700 text-sm">Recognized for developing a procurement dashboard in Power BI, enhancing decision-making efficiency by 60%.</p>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200">
-                        <p class="font-medium text-gray-900">Best Performer Award (BT Group, 2022)</p>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:bg-emerald-50 transition duration-300 hover:shadow-md">
+                        <p class="font-medium text-slate-900">Best Performer Award (BT Group, 2022)</p>
                         <p class="text-gray-700 text-sm">Delivered 5 critical software projects on time and within budget, demonstrating exceptional stakeholder management and risk mitigation skills.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Leadership Contributions -->
             <div>
-                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Leadership Contributions</h3>
+                <h3 class="text-2xl font-semibold text-slate-800 mb-4">Leadership Contributions</h3>
                 <div class="space-y-4">
-                    <div class="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200">
-                        <p class="font-medium text-gray-900">Led the UI/UX CoP at Deloitte</p>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:bg-emerald-50 transition duration-300 hover:shadow-md">
+                        <p class="font-medium text-slate-900">Led the UI/UX CoP at Deloitte</p>
                         <p class="text-gray-700 text-sm">As a Project Manager, drove initiatives that improved accessibility compliance by 7%. Coordinated cross-functional collaboration between design and development teams, aligning efforts with project goals and timelines.</p>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200">
-                        <p class="font-medium text-gray-900">Managed the Solution Engineering CoP</p>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:bg-emerald-50 transition duration-300 hover:shadow-md">
+                        <p class="font-medium text-slate-900">Managed the Solution Engineering CoP</p>
                         <p class="text-gray-700 text-sm">At an organizational level, driving initiatives across 4 key domains: Generative AI, Cloud Computing, Data Analysis, and Cybersecurity. Oversaw the planning and execution of 10+ initiatives, monitored progress, and ensured alignment with organizational priorities to enhance innovation and skill development.</p>
                     </div>
                 </div>
@@ -144,141 +159,191 @@
         </section>
 
 
-        <!-- Skills Section -->
-        <section id="skills" class="bg-white p-6 md:p-8 rounded-lg shadow-md">
-            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Skills</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm text-center">Agile</span>
-                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm text-center">Waterfall</span>
-                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm text-center">Scrum</span>
-                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm text-center">Risk & Change Management</span>
-                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm text-center">Strategic Planning</span>
-                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm text-center">Governance</span>
-                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm text-center">Power BI</span>
-                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm text-center">Tableau</span>
-                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm text-center">Excel</span>
-                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm text-center">KPI Tracking</span>
-                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm text-center">ETL</span>
-                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm text-center">ServiceNow</span>
-                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm text-center">Smartsheet</span>
-                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm text-center">Microsoft Project</span>
-                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm text-center">SharePoint</span>
-                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm text-center">JIRA</span>
-                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm text-center">Oracle Fusion</span>
-                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm text-center">SAP</span>
+        <section id="skills" class="bg-white p-6 md:p-10 rounded-xl shadow-xl">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 border-b-2 border-emerald-500 pb-2">Core Skills & Expertise</h2>
+            
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-emerald-600 mb-4">Program & Portfolio Management</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">Project Planning</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">Agile / Scrum</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">Waterfall</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">Governance</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">Change & Risk Management</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">Strategic Planning</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold text-emerald-600 mb-4">Data & Analytics Tools</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">Power BI</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">Tableau</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">Excel (Advanced)</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">ETL</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">KPI Reporting</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">MySQL</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold text-emerald-600 mb-4">Project Tools & Platforms</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">ServiceNow</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">JIRA</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">Smartsheet</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">MIRO</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">Microsoft Project</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">SharePoint</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">Oracle Fusion</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">SAP</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold text-emerald-600 mb-4">Leadership & Communication</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">Stakeholder Management</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">Executive Reporting</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">Cross-functional Collaboration</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">Data Governance</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">Strategic Planning</span>
+                        <span class="bg-emerald-50 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm hover:bg-emerald-100 transition duration-300">Problem Solving</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Projects & Certifications Section -->
-        <section id="projects" class="bg-white p-6 md:p-8 rounded-lg shadow-md">
-            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Projects & Certifications</h2>
+        <section id="projects" class="bg-white p-6 md:p-10 rounded-xl shadow-xl">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 border-b-2 border-emerald-500 pb-2">Projects & Certifications</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Project Card: AI Task Prioritization Tool (Agile Simulation) -->
-                <div class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-200 hover:shadow-lg transition duration-300">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">AI Task Prioritization Tool (Agile Simulation)</h3>
-                    <p class="text-gray-700 mb-4">Simulated Agile delivery of an AI-based task prioritization product using Jira and GitHub, showcasing end-to-end project leadership. Applied skills in Agile Scrum, backlog management, sprint planning, Jira workflows, and GitHub integration.</p>
+                
+                <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 hover:shadow-lg transition duration-300 hover:scale-[1.01]">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">PMP Certification (In Progress)</h3>
+                    <p class="text-gray-700 mb-4">Completed the required 35 hours of Project Management Education (PDU) and is actively preparing for the Project Management Professional (PMP) examination.</p>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-purple-100 text-purple-800 text-xs font-medium px-3 py-1 rounded-full">Agile</span>
-                        <span class="bg-purple-100 text-purple-800 text-xs font-medium px-3 py-1 rounded-full">Scrum</span>
-                        <span class="bg-purple-100 text-purple-800 text-xs font-medium px-3 py-1 rounded-full">Project Management</span>
-                        <span class="bg-purple-100 text-purple-800 text-xs font-medium px-3 py-1 rounded-full">Jira</span>
-                        <span class="bg-purple-100 text-purple-800 text-xs font-medium px-3 py-1 rounded-full">GitHub</span>
+                        <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-3 py-1 rounded-full">In Progress</span>
+                        <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-3 py-1 rounded-full">PMP</span>
+                        <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-3 py-1 rounded-full">35 PDU</span>
                     </div>
                     <div class="flex space-x-3">
-                        <!-- IMPORTANT: The PDF link needs to be hosted online (e.g., Google Drive, Dropbox) to be accessible on your live website. Replace the placeholder with a publicly accessible URL. -->
-                        <a href="https://your-public-link-to-jpmorgan-certificate.pdf" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium transition duration-300">
-                            View Certificate
+                        <a href="#pmp-details" class="text-emerald-600 hover:text-emerald-800 font-medium transition duration-300">
+                            View PDU Certificate
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 hover:shadow-lg transition duration-300 hover:scale-[1.01]">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">AI Task Prioritization Tool (Agile Simulation)</h3>
+                    <p class="text-gray-700 mb-4">Developed an end-to-end Agile data product using JIRA and GitHub, showcasing sprint management, backlog creation, and release reporting in a realistic environment.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-medium px-3 py-1 rounded-full">Agile</span>
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-medium px-3 py-1 rounded-full">Scrum</span>
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-medium px-3 py-1 rounded-full">Jira</span>
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-medium px-3 py-1 rounded-full">GitHub</span>
+                    </div>
+                    <div class="flex space-x-3">
+                        <a href="https://your-public-link-to-project-details" target="_blank" class="text-emerald-600 hover:text-emerald-800 font-medium transition duration-300">
+                            View Project Details
                         </a>
                     </div>
                 </div>
 
-                <!-- Project Card: Power BI Simulation - PwC Switzerland -->
-                <div class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-200 hover:shadow-lg transition duration-300">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Power BI Simulation - PwC Switzerland</h3>
-                    <p class="text-gray-700 mb-4">Developed client-centric Power BI dashboards focused on HR metrics, providing data-driven insights for decision-making on diversity, equity, and inclusion.</p>
+                <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 hover:shadow-lg transition duration-300 hover:scale-[1.01]">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">Power BI Simulation - PwC Switzerland</h3>
+                    <p class="text-gray-700 mb-4">Developed client-centric Power BI dashboards focused on HR and DEI metrics, providing data-driven insights for executive decision support.</p>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-purple-100 text-purple-800 text-xs font-medium px-3 py-1 rounded-full">Power BI</span>
-                        <span class="bg-purple-100 text-purple-800 text-xs font-medium px-3 py-1 rounded-full">Data Analysis</span>
-                        <span class="bg-purple-100 text-purple-800 text-xs font-medium px-3 py-1 rounded-full">Dashboard Creation</span>
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-medium px-3 py-1 rounded-full">Power BI</span>
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-medium px-3 py-1 rounded-full">Data Analysis</span>
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-medium px-3 py-1 rounded-full">Dashboard Creation</span>
                     </div>
                     <div class="flex space-x-3">
-                        <a href="https://drive.google.com/drive/folders/1-9jcXmKY4j3fc-mGXRaNJiT6cU5QHS6l" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium transition duration-300">
+                        <a href="https://drive.google.com/drive/folders/1-9jcXmKY4j3fc-mGXRaNJiT6cU5QHS6l" target="_blank" class="text-emerald-600 hover:text-emerald-800 font-medium transition duration-300">
                             Live Demo / Files
                         </a>
                     </div>
                 </div>
 
-                <!-- Certification Card: SAFe Practitioner 6.0 -->
-                <div class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-200 hover:shadow-lg transition duration-300">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">SAFe Practitioner 6.0</h3>
+                <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 hover:shadow-lg transition duration-300 hover:scale-[1.01]">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">SAFe Practitioner 6.0</h3>
                     <p class="text-gray-700 mb-4">Certified in Scaled Agile Framework (SAFe) Practitioner 6.0, demonstrating expertise in applying Lean-Agile principles and practices.</p>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-3 py-1 rounded-full">Certification</span>
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-3 py-1 rounded-full">SAFe</span>
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-3 py-1 rounded-full">Agile</span>
+                        <span class="bg-teal-100 text-teal-800 text-xs font-medium px-3 py-1 rounded-full">Certification</span>
+                        <span class="bg-teal-100 text-teal-800 text-xs font-medium px-3 py-1 rounded-full">SAFe</span>
+                        <span class="bg-teal-100 text-teal-800 text-xs font-medium px-3 py-1 rounded-full">Agile</span>
                     </div>
                     <div class="flex space-x-3">
-                        <a href="https://drive.google.com/drive/folders/1yyjuT7Z96VIwvTTuWjrreoHmuPLT5VCb" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium transition duration-300">
+                        <a href="https://drive.google.com/drive/folders/1yyjuT7Z96VIwvTTuWjrreoHmuPLT5VCb" target="_blank" class="text-emerald-600 hover:text-emerald-800 font-medium transition duration-300">
                             Learn More / View Certificate
                         </a>
                     </div>
                 </div>
 
-                <!-- Certification Card: ITIL V4 Foundation -->
-                <div class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-200 hover:shadow-lg transition duration-300">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">ITIL V4 Foundation</h3>
-                    <p class="text-gray-700 mb-4">Certified in ITIL 4 Foundation, understanding the IT service management framework and its key concepts.</p>
+                <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 hover:shadow-lg transition duration-300 hover:scale-[1.01]">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">ITIL V4 Foundation</h3>
+                    <p class="text-gray-700 mb-4">Certified in ITIL 4 Foundation, understanding the IT service management framework and its key concepts for optimal service delivery.</p>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-3 py-1 rounded-full">Certification</span>
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-3 py-1 rounded-full">ITIL</span>
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-3 py-1 rounded-full">Service Management</span>
+                        <span class="bg-teal-100 text-teal-800 text-xs font-medium px-3 py-1 rounded-full">Certification</span>
+                        <span class="bg-teal-100 text-teal-800 text-xs font-medium px-3 py-1 rounded-full">ITIL</span>
+                        <span class="bg-teal-100 text-teal-800 text-xs font-medium px-3 py-1 rounded-full">Service Management</span>
                     </div>
                     <div class="flex space-x-3">
-                        <a href="https://drive.google.com/drive/folders/1yyjuT7Z96VIwvTTuWjrreoHmuPLT5VCb" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium transition duration-300">
+                        <a href="https://drive.google.com/drive/folders/1yyjuT7Z96VIwvTTuWjrreoHmuPLT5VCb" target="_blank" class="text-emerald-600 hover:text-emerald-800 font-medium transition duration-300">
                             Learn More / View Certificate
                         </a>
                     </div>
                 </div>
 
-                <!-- Certification Card: Foundations of Project Management (Google) -->
-                <div class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-200 hover:shadow-lg transition duration-300">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Foundations of Project Management (Google)</h3>
-                    <p class="text-gray-700 mb-4">Completed Google's Foundations of Project Management course, gaining essential project management skills and knowledge.</p>
+                <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 hover:shadow-lg transition duration-300 hover:scale-[1.01]">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">Foundations of Project Management (Google)</h3>
+                    <p class="text-gray-700 mb-4">Completed Google's Foundations of Project Management course, gaining essential project management skills and foundational knowledge.</p>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-3 py-1 rounded-full">Certification</span>
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-3 py-1 rounded-full">Project Management</span>
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-3 py-1 rounded-full">Google</span>
+                        <span class="bg-teal-100 text-teal-800 text-xs font-medium px-3 py-1 rounded-full">Certification</span>
+                        <span class="bg-teal-100 text-teal-800 text-xs font-medium px-3 py-1 rounded-full">Project Management</span>
+                        <span class="bg-teal-100 text-teal-800 text-xs font-medium px-3 py-1 rounded-full">Google</span>
                     </div>
                     <div class="flex space-x-3">
-                        <a href="https://www.coursera.org/account/accomplishments/verify/G563BYQT6A7G" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium transition duration-300">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/G563BYQT6A7G" target="_blank" class="text-emerald-600 hover:text-emerald-800 font-medium transition duration-300">
                             Learn More / View Certificate
                         </a>
                     </div>
                 </div>
             </div>
         </section>
+        
+        <section id="education" class="bg-white p-6 md:p-10 rounded-xl shadow-xl">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 border-b-2 border-emerald-500 pb-2">Education</h2>
+            <div class="space-y-4">
+                <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 hover:shadow-md transition duration-300 hover:scale-[1.01] flex justify-between items-center flex-wrap">
+                    <div>
+                        <h3 class="text-xl font-semibold text-slate-900">Bachelor of Technology – Mechanical Engineering</h3>
+                        <p class="text-lg text-gray-700">University of Engineering and Management, Jaipur</p>
+                    </div>
+                    <p class="text-gray-600 font-medium mt-2 sm:mt-0">Jul 2013 – May 2017</p>
+                </div>
+            </div>
+        </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="bg-white p-6 md:p-8 rounded-lg shadow-md">
-            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Get in Touch</h2>
-            <p class="text-lg text-gray-700 mb-6">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
-            <div class="flex flex-col space-y-4 max-w-md mx-auto">
-                <a href="mailto:hriverine@gmail.com" class="bg-blue-600 text-white py-3 px-6 rounded-lg text-center text-lg font-medium shadow-md hover:bg-blue-700 transition duration-300">
+
+        <section id="contact" class="bg-white p-6 md:p-10 rounded-xl shadow-xl">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 border-b-2 border-emerald-500 pb-2">Get in Touch</h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto text-center">I'm always open to new opportunities and collaborations. Feel free to reach out using the options below.</p>
+            <div class="flex flex-col space-y-4 max-w-sm mx-auto">
+                <a href="mailto:hriverine@gmail.com" class="bg-emerald-600 text-white py-3 px-6 rounded-lg text-center text-lg font-bold shadow-lg hover:bg-emerald-700 transition duration-300 transform hover:-translate-y-0.5">
                     Email Me: hriverine@gmail.com
                 </a>
-                <a href="https://linkedin.com/in/rishab-karmakar-b89b47169" target="_blank" class="bg-gray-700 text-white py-3 px-6 rounded-lg text-center text-lg font-medium shadow-md hover:bg-gray-800 transition duration-300">
+                <a href="https://linkedin.com/in/rishab-karmakar-b89b47169" target="_blank" class="bg-slate-700 text-white py-3 px-6 rounded-lg text-center text-lg font-bold shadow-lg hover:bg-slate-800 transition duration-300 transform hover:-translate-y-0.5">
                     Connect on LinkedIn
                 </a>
-                <!-- GitHub link is not in resume, so removed for now. Can be added if you have one. -->
             </div>
         </section>
 
     </main>
 
-    <!-- Footer Section -->
-    <footer class="bg-gray-900 text-white p-6 text-center mt-12 rounded-t-lg">
+    <footer class="bg-slate-100 text-slate-700 p-6 text-center mt-16 rounded-t-xl border-t border-gray-200">
         <p>&copy; 2025 Rishab Karmakar. All rights reserved.</p>
-        <p class="text-sm mt-2">Built with ❤️ and Tailwind CSS</p>
+        <p class="text-sm mt-2 text-gray-500">Built with a subtle touch and striking results in mind.</p>
     </footer>
 
 </body>
